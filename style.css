@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 15px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform:translateZ(-43px) scale(4);
+}
+
+.foreground{
+    transform:translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    z-index: -1;
+}
+
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.bg{
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.head{
+    position: absolute;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgb(0,0,0,0.3);
+}
+
+.info{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    background: -webkit-linear-gradient(0deg, #565151 0%, #9351c3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    top: 3rem;
+}
+
+.bg1{
+    background-image: url("sport-1.jpg");
+}
+
+.bg2{
+    background-image: url("sport-2.jpg");
+}
+
+.bg3{
+    background-image: url("sport-3.jpg");
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem,2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5 rem;
+    font-weight: 600;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
