@@ -9,6 +9,9 @@
     overflow-y: auto;
     height: 100vh;
     perspective: 15px;
+    ::-webkit-scrollbar { /* this is use for hide the scrollbar in chrome */
+    display: none;
+  }
 }
 
 .container {
