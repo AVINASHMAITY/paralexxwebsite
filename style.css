@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
+#wrapper::-webkit-scrollbar {
+    display: none;
+}
+
 #wrapper {
     overflow-x: hidden;
 /*     overflow-y: auto; */
     height: 100vh;
     perspective: 15px;
-    wrapper::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 .container {
