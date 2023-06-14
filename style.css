@@ -9,7 +9,7 @@
 /*     overflow-y: auto; */
     height: 100vh;
     perspective: 15px;
-    #wrapper::-webkit-scrollbar {
+    wrapper::-webkit-scrollbar {
     display: none;
   }
 }
